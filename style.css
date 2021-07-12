@@ -1,0 +1,494 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #2C2C2C;
+}
+
+
+body {
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+/* ----------------
+Typography
+---------------- */
+.title {
+    letter-spacing: 0.06em;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+h3 {
+    font-size: 22px;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+h5 {
+    font-size: 16px;
+}
+
+h6 {
+    font-size: 14px;
+}
+
+P {
+    font-size: 12px;
+    color: var(--k2);
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-weight: 500;
+    line-height: 150%;
+}
+
+
+
+/* ----------------
+Colors
+---------------- */
+:root {
+
+    --alpha-modal : rgba(0, 0, 0, 0.4);
+
+    /* GREY SCALE */
+    --k-3: #070707;
+    --k-2: #131313;
+    --k-1: #202020;
+    --k0: #2C2C2C;
+    --k1: #4E4E4E;
+    --k2: #707070;
+    --k3: #929292;
+    --k4: #D7D7D7;
+    --k5: #F9F9F9;
+    --k6: #FFF;
+
+    /* RED SCALE */
+    --r-6: #250A0A;
+    --r-5: #3E1111;
+    --r-4: #561818;
+    --r-3: #6F1F1F;
+    --r-2: #882526;
+    --r-1: #A02C2D;
+    --r0: #B93334;
+    --r1: #C24F4F;
+    --r2: #CC6A6B;
+    --r3: #D58686;
+    --r4: #DFA1A2;
+    --r5: #E8BDBD;
+    --r6: #F2D8D8;
+
+    --width-pad: calc(100vw - 64px)
+}
+
+
+
+/* ----------------
+Header profile
+---------------- */
+#homeImg {
+    position: absolute;
+    top: 0;
+    z-index: -99;
+    opacity: 0.6;
+}
+
+.profile {
+    padding: 64px 32px 32px;
+}
+
+.profile > * {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--k5);
+}
+
+.nameandRole p {
+    color: var(--k3);
+}
+
+.photoProfile img {
+    border-radius: 50%;
+    border: 1px solid var(--k5);
+}
+
+.socials {
+    width: min-content;
+    margin-top: 16px;
+}
+
+.socials a {
+    height: 49px;
+    background-color: var(--k-2);
+    padding: 10px;
+    border: 2px solid var(--k0);
+    border-radius: 8px;
+}
+
+.socials a:nth-of-type(2) {
+    margin: 0 16px;
+}
+
+
+
+/* ----------------
+Nav bar
+---------------- */
+nav {
+    padding: 32px;
+    background-color: var(--k6);
+    border-radius: 16px 16px 0 0 ;
+}
+
+nav > .containerNav {
+    padding: 4px 5px 5px;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 22px;
+}
+
+.labelNav > input[type=radio]:checked ~ p {
+    transition: 600ms;
+    background: var(--r-3);
+    font-weight: 700;
+    color: var(--k6);
+}
+
+input[type=radio] {
+    display: none;
+}
+
+.labelNav {
+    width: 32%;
+    text-align: center;
+    font-size: 12px;
+    line-height: 150%;
+    border-radius: 20px;
+    font-weight: 500;
+    color: var(--k2);
+}
+
+.labelNav > p {
+    padding: 8px;
+    border-radius: 20px;
+}
+
+
+
+/* ----------------
+Container content
+---------------- */
+.contentContainer {
+    height: max-content;
+    background-color: var(--k6);
+    transform: translateY(-1px);
+    /* opacity: 0; */
+}
+
+#contentContainer > * {
+    margin: 0 32px;
+}
+
+#contentContainer {
+    transition: 600ms;
+    display: flex;
+
+    /* transform: translateX(-100vw); */
+
+    width: max-content;
+}
+
+
+/* ----------------
+Cards pessoal
+---------------- */
+.pessoalCards {
+    width: calc(100vw - 64px);
+}
+
+.card {
+    width: calc(100vw - 64px);
+    display: flex;
+    justify-content: space-between;
+    padding: 32px;
+    background: linear-gradient(94.13deg, #2C2C2C 0%, #202020 100%);
+    border-radius: 16px;
+}
+
+.card:nth-of-type(1) {
+    margin-bottom: 32px;
+}
+
+.card h5 {
+    color: var(--k6);
+}
+
+.card p {
+    margin-top: 4px;
+    color: var(--k3);
+}
+
+.btnCard {
+    height: min-content;
+    border-radius: 8px;
+    border: none;
+    padding: 16px;
+}
+
+.red {
+    overflow: hidden;
+    position: relative;
+    margin: 32px 0 0;
+    background: linear-gradient(96.48deg, #561818 0%, #3E1111 100%);
+}
+
+.red > .infoCard {
+    width: 70%;
+}
+
+.red > .infoCard > p {
+    color: var(--r4);
+}
+
+.red img {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 134px;
+    mix-blend-mode: multiply;
+}
+
+
+
+/* ----------------
+Cards empresa
+---------------- */
+.empresaCards {
+    width: calc(100vw - 64px);
+}
+
+
+
+/* ----------------
+Agenda container
+---------------- */
+.agendaContainer {
+    width: calc(100vw - 64px);
+}
+
+.introText > p {
+    margin-top: 4px;
+}
+
+
+
+
+.calendar {
+    margin-top: 64px;
+}
+
+.headerCalendar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.headerCalendar > * {
+    margin-top: 8px;
+    display: flex;
+}
+
+.headerCalendar > * > h5 {
+    margin-right: 8px;
+}
+
+
+
+.week {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    margin-top: 16px;
+}
+
+.week > * {
+    font-weight: 700;
+    color: var(--r0);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(var(--width-pad) / 7);
+    height: 32px;
+}
+
+
+
+.days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    margin-top: 8px;
+}
+
+.days > label {
+    display: flex;
+    justify-content: center;
+    width: calc(var(--width-pad) / 7);
+}
+
+.days > label > p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    color: var(--k0);
+    font-weight: 700;
+}
+
+.days > label > input[type=radio]:checked ~ p {
+    transition: 600ms;
+    background: var(--k0);
+    color: var(--k6);
+}
+
+
+
+.notActualMonth > p {
+    font-weight: 500!important;
+    color: var(--k3)!important;
+}
+
+.notActualMonth {
+    pointer-events: none;
+}
+
+
+
+.hour {
+    margin: 64px 0;
+}
+
+.descriptCard:nth-of-type(1) > p {
+    margin-top: 8px;
+}
+
+.avaliableHour > label {
+    display: flex;
+    align-items: center;
+    margin: 16px 0;
+}
+
+.hourCard {
+    width: 100%;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 32px;
+    padding: 32px 0;
+}
+
+.notAvaliableCard {
+    background: linear-gradient(92.35deg, rgba(215, 215, 215, 0.5) 0%, rgba(215, 215, 215, 0.7) 100%);
+}
+
+.avaliableCard {
+    background-color: var(--k0);
+}
+
+.avaliableCard > p {
+    color: var(--k6);
+    font-weight: 600;
+}
+
+
+
+.rangeHour {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rangeHour > div {
+    width: 45%;
+}
+
+.rangeCard {
+    background: var(--k5);
+    padding: 16px 32px;
+    margin-top: 16px;
+    border-radius: 8px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rangeCard > div > h4 {
+    margin: 8px 22px;
+    color: var(--k2);
+    font-weight: 500;
+}
+
+.rangeCard > div > h4:nth-of-type(2) {
+    font-weight: 700;
+    color: var(--k0);
+}
+
+
+
+.agendaForm {
+    display: flex;
+    flex-direction: column;
+    margin: 64px 0;
+
+}
+
+.agendaForm > input[type=text] {
+    background: var(--k5);
+    width: 100%;
+    margin-bottom:  16px;
+    padding: 16px;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    border: 1px solid var(--k4);
+    border-radius: 8px;
+}
+
+input[type=text]:focus-visible {
+    outline: none;
+    border: 1px solid var(--k3);
+}
+
+.agendaForm > input[type=button] {
+    margin-top: 32px;
+    padding: 24px 0;
+    font-weight: 700;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--k6);
+    background: var(--k-2);
+    border-radius: 8px;
+    border: none;
+}
