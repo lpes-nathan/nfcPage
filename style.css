@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
 
 * {
     padding: 0;
@@ -7,25 +7,20 @@
 }
 
 html {
-    font-family: 'Montserrat', sans-serif;
-    background-color: #2C2C2C;
+    font-family: 'Lexend Deca', sans-serif;
+    background:  var(--b-5);
 }
 
 
 body {
+    overflow-x: hidden;
     height: 100vh;
-    overflow: hidden;
 }
 
 
 /* ----------------
 Typography
 ---------------- */
-.title {
-    letter-spacing: 0.06em;
-    font-weight: 700;
-}
-
 h1 {
     font-size: 32px;
 }
@@ -50,7 +45,7 @@ h6 {
     font-size: 14px;
 }
 
-P {
+p {
     font-size: 12px;
     color: var(--k2);
 }
@@ -82,19 +77,19 @@ Colors
     --k6: #FFF;
 
     /* RED SCALE */
-    --r-6: #250A0A;
-    --r-5: #3E1111;
-    --r-4: #561818;
-    --r-3: #6F1F1F;
-    --r-2: #882526;
-    --r-1: #A02C2D;
-    --r0: #B93334;
-    --r1: #C24F4F;
-    --r2: #CC6A6B;
-    --r3: #D58686;
-    --r4: #DFA1A2;
-    --r5: #E8BDBD;
-    --r6: #F2D8D8;
+    --b-5: #04080E;
+    --b-4: #070E1A;
+    --b-3: #0A1526;
+    --b-2: #0E1B32;
+    --b-1: #11223E;
+    --b0: #14284A;
+    --b1: #334563;
+    --b2: #53627C;
+    --b3: #727F95;
+    --b4: #929CAE;
+    --b5: #B2BAC6;
+    --b6: #D3D7DE;
+    --b7: #F3F4F6;
 
     --width-pad: calc(100vw - 64px)
 }
@@ -105,6 +100,7 @@ Colors
 Header profile
 ---------------- */
 #homeImg {
+    display: none;
     position: absolute;
     top: 0;
     z-index: -99;
@@ -117,9 +113,12 @@ Header profile
 
 .profile > * {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     color: var(--k5);
+}
+
+.nameandRole {
+    margin-left: 16px;
 }
 
 .nameandRole p {
@@ -127,25 +126,9 @@ Header profile
 }
 
 .photoProfile img {
-    border-radius: 50%;
-    border: 1px solid var(--k5);
-}
-
-.socials {
-    width: min-content;
-    margin-top: 16px;
-}
-
-.socials a {
-    height: 49px;
-    background-color: var(--k-2);
-    padding: 10px;
-    border: 2px solid var(--k0);
-    border-radius: 8px;
-}
-
-.socials a:nth-of-type(2) {
-    margin: 0 16px;
+    width: 106px;
+    border-radius: 4px;
+    border: 2px solid var(--b1);
 }
 
 
@@ -165,13 +148,12 @@ nav > .containerNav {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    border-radius: 22px;
+    border-radius: 4px;
 }
 
 .labelNav > input[type=radio]:checked ~ p {
     transition: 600ms;
-    background: var(--r-3);
-    font-weight: 700;
+    background: var(--b-3);
     color: var(--k6);
 }
 
@@ -184,14 +166,14 @@ input[type=radio] {
     text-align: center;
     font-size: 12px;
     line-height: 150%;
-    border-radius: 20px;
+    border-radius: 4px;
     font-weight: 500;
     color: var(--k2);
 }
 
 .labelNav > p {
     padding: 8px;
-    border-radius: 20px;
+    border-radius: 4px;
 }
 
 
@@ -201,6 +183,8 @@ Container content
 ---------------- */
 .contentContainer {
     height: max-content;
+    width: 100vw;
+    overflow-x: hidden;
     background-color: var(--k6);
     transform: translateY(-1px);
     /* opacity: 0; */
@@ -213,9 +197,6 @@ Container content
 #contentContainer {
     transition: 600ms;
     display: flex;
-
-    /* transform: translateX(-100vw); */
-
     width: max-content;
 }
 
@@ -231,9 +212,9 @@ Cards pessoal
     width: calc(100vw - 64px);
     display: flex;
     justify-content: space-between;
-    padding: 32px;
-    background: linear-gradient(94.13deg, #2C2C2C 0%, #202020 100%);
-    border-radius: 16px;
+    padding: 24px;
+    background: var(--b-1);
+    border-radius: 4px;
 }
 
 .card:nth-of-type(1) {
@@ -246,7 +227,7 @@ Cards pessoal
 
 .card p {
     margin-top: 4px;
-    color: var(--k3);
+    color: var(--b5);
 }
 
 .btnCard {
@@ -260,7 +241,7 @@ Cards pessoal
     overflow: hidden;
     position: relative;
     margin: 32px 0 0;
-    background: linear-gradient(96.48deg, #561818 0%, #3E1111 100%);
+    background: var(--b-3);
 }
 
 .red > .infoCard {
@@ -268,7 +249,7 @@ Cards pessoal
 }
 
 .red > .infoCard > p {
-    color: var(--r4);
+    color: var(--b5);
 }
 
 .red img {
@@ -305,7 +286,7 @@ Agenda container
 
 
 .calendar {
-    margin-top: 64px;
+    margin-top: 32px;
 }
 
 .headerCalendar {
@@ -331,8 +312,7 @@ Agenda container
 }
 
 .week > * {
-    font-weight: 700;
-    color: var(--r0);
+    color: var(--b3);
 
     display: flex;
     justify-content: center;
@@ -363,24 +343,19 @@ Agenda container
     height: 32px;
     border-radius: 8px;
     color: var(--k0);
-    font-weight: 700;
 }
 
 .days > label > input[type=radio]:checked ~ p {
     transition: 600ms;
-    background: var(--k0);
+    background: var(--b0);
     color: var(--k6);
 }
 
 
 
-.notActualMonth > p {
+.notCurrentMonth > p {
     font-weight: 500!important;
-    color: var(--k3)!important;
-}
-
-.notActualMonth {
-    pointer-events: none;
+    color: var(--k4)!important;
 }
 
 
@@ -410,16 +385,19 @@ Agenda container
 }
 
 .notAvaliableCard {
-    background: linear-gradient(92.35deg, rgba(215, 215, 215, 0.5) 0%, rgba(215, 215, 215, 0.7) 100%);
+    background: var(--b6);
+}
+
+.notAvaliableCard > p {
+    color: var(--b2);
 }
 
 .avaliableCard {
-    background-color: var(--k0);
+    background-color: var(--b-1);
 }
 
 .avaliableCard > p {
     color: var(--k6);
-    font-weight: 600;
 }
 
 
@@ -446,13 +424,12 @@ Agenda container
 
 .rangeCard > div > h4 {
     margin: 8px 22px;
-    color: var(--k2);
-    font-weight: 500;
+    color: var(--b2);
 }
 
 .rangeCard > div > h4:nth-of-type(2) {
     font-weight: 700;
-    color: var(--k0);
+    color: var(--b-1);
 }
 
 
@@ -461,7 +438,6 @@ Agenda container
     display: flex;
     flex-direction: column;
     margin: 64px 0;
-
 }
 
 .agendaForm > input[type=text] {
@@ -469,11 +445,10 @@ Agenda container
     width: 100%;
     margin-bottom:  16px;
     padding: 16px;
-    font-size: 14px;
-    font-weight: 600;
+    font-size: 13px;
     font-family: 'Montserrat', sans-serif;
-    border: 1px solid var(--k4);
-    border-radius: 8px;
+    border: 1px solid var(--b5);
+    border-radius: 4px;
 }
 
 input[type=text]:focus-visible {
@@ -483,12 +458,12 @@ input[type=text]:focus-visible {
 
 .agendaForm > input[type=button] {
     margin-top: 32px;
-    padding: 24px 0;
-    font-weight: 700;
+    padding: 20px 0;
+    font-weight: 600;
     font-size: 16px;
     font-family: 'Montserrat', sans-serif;
     color: var(--k6);
-    background: var(--k-2);
-    border-radius: 8px;
+    background: var(--b-2);
+    border-radius: 4px;
     border: none;
 }

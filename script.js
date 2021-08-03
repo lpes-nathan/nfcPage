@@ -1,6 +1,6 @@
 // Nav bar motion
 var pessoalBtn = document.querySelector ("#pessoalNav");
-let agendaBtn = document.querySelector ("#agendaNav");
+var agendaBtn = document.querySelector ("#agendaNav");
 var empresaBtn = document.querySelector ("#empresaNav");
 
 empresaBtn.addEventListener ("click", () => {

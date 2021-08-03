@@ -1,27 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ptbr">
 
 <head>
-
-    <link rel="manifest" href="manifest.webmanifest">
-
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="application-name" content="Monkey Branch">
-    <meta name="apple-mobile-web-app-title" content="Monkey Branch">
-    <meta name="theme-color" content="#2c2c2c">
-    <meta name="msapplication-navbutton-color" content="#2c2c2c">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="msapplication-starturl" content="http://monkeybranch1.hospedagemdesites.ws/nathan/index.html">
-
-    <link rel="icon" type="svg" sizes="504x504" href="monkeylogo.svg">
-    <link rel="apple-touch-icon" type="svg" sizes="504x504" href="monkeylogo.svg">
-
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=0.86, maximum-scale=5.0, minimum-scale=0.86">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartão de visita digital</title>
     <link rel="stylesheet" href="style.css">
-    <title>Meu perfil</title>
+
+    <link rel="manifest" href="manifest.json">
+    
+    <meta name="apple-mobile-web-app-status-bar" content="#e78516">
+    <link rel="apple-touch-icon" href="img/logo192.png">
+
 </head>
 
 <body>
@@ -32,35 +23,21 @@
 
         <div class="profile">
             <div>
-
-                <div class="nameandRole">
-                    <h4 class="title">NATHAN LOPES</h4>
-                    <p>Chief of Design at Monkey Branch</p>
-                </div>
-
+                
                 <div class="photoProfile">
                     <img src="./img/photoProfile.png" alt="foto de perfil">
                 </div>
 
-            </div>
-
-            <div class="socials">
-
-                <a href="http://www.instagram.com/lpes_nathan/" class="socialsIcon">
-                    <img src="./icons/instagram.svg" alt="instagram">
-                </a>
-
-                <a href="http://www.instagram.com/lpes_nathan/" class="socialsIcon">
-                    <img src="./icons/linkedin.svg" alt="linkedin">
-                </a>
-
-                <a href="http://www.instagram.com/lpes_nathan/" class="socialsIcon">
-                    <img src="./icons/dribbble.svg" alt="dribbble">
-                </a>
+                <div class="nameandRole">
+                    <h4>Marcos Petkow</h4>
+                    <p>Diretor na WPX</p>
+                </div>
 
             </div>
         </div>
     </header>
+
+
 
     <nav>
 
@@ -96,7 +73,7 @@
                 <div class="card">
 
                     <div class="infoCard">
-                        <h5 class="title">E-mail</h5>
+                        <h5>E-mail</h5>
                         <p>nathan@monkeybranch.dev</p>
                     </div>
 
@@ -109,7 +86,7 @@
                 <div class="card">
 
                     <div class="infoCard">
-                        <h5 class="title">Whatsapp</h5>
+                        <h5>Whatsapp</h5>
                         <p>+55 47 9966-21883</p>
                     </div>
 
@@ -122,7 +99,7 @@
                 <div class="card red">
 
                     <div class="infoCard">
-                        <h5 class="title">Ei! Tenho alguns documentos aqui.</h5>
+                        <h5>Ei! Tenho alguns documentos aqui.</h5>
                         <p>Talvez você precise deles.</p>
                     </div>
 
@@ -136,8 +113,8 @@
 
                 <div class="introText">
 
-                    <h5 class="title">Quer marcar uma conversa?</h5>
-                    <p>Aproveite aqui para ver os dias e horários disponíveis!</p>
+                    <h5>Quer marcar uma conversa?</h5>
+                    <p>Aproveite aqui para ver os dias e horários disponíveis.</p>
 
                 </div>
 
@@ -148,12 +125,12 @@
                     <div class="headerCalendar">
 
                         <div class="month">
-                            <h5 class="title">Junho</h5>
+                            <h5>Junho</h5>
                             <img src="./icons/chevronDown.svg" alt="seta para baixo">
                         </div>
 
                         <div class="year">
-                            <h5 class="title">2021</h5>
+                            <h5>2021</h5>
                             <img src="./icons/chevronDown.svg" alt="seta para baixo">
                         </div>
 
@@ -173,12 +150,12 @@
 
                         <div class="days">
 
-                            <label for="30" class="notActualMonth">
+                            <label for="30" class="notCurrentMonth">
                                 <input type="radio" name="day" id="30">
                                 <p>30</p>
                             </label>
 
-                            <label for="31" class="notActualMonth">
+                            <label for="31" class="notCurrentMonth">
                                 <input type="radio" name="day" id="31">
                                 <p>31</p>
                             </label>
@@ -333,17 +310,17 @@
                                 <p>30</p>
                             </label>
 
-                            <label for="1-2" class="notActualMonth">
+                            <label for="1-2" class="notCurrentMonth">
                                 <input type="radio" name="day" id="1-2">
                                 <p>1</p>
                             </label>
 
-                            <label for="2-2" class="notActualMonth">
+                            <label for="2-2" class="notCurrentMonth">
                                 <input type="radio" name="day" id="2-2">
                                 <p>2</p>
                             </label>
 
-                            <label for="3-2" class="notActualMonth">
+                            <label for="3-2" class="notCurrentMonth">
                                 <input type="radio" name="day" id="3-2">
                                 <p>3</p>
                             </label>
@@ -420,7 +397,7 @@
 
                             </div>
 
-                            <h4 class="title">:</h4>
+                            <h4>:</h4>
 
                             <div class="minuteRange">
 
@@ -437,7 +414,7 @@
 
                     <div>
 
-                        <p>Início</p>
+                        <p>Término</p>
 
                         <div class="rangeCard">
 
@@ -449,7 +426,7 @@
 
                             </div>
 
-                            <h4 class="title">:</h4>
+                            <h4>:</h4>
 
                             <div class="minuteRange">
 
@@ -485,7 +462,7 @@
                 <div class="card">
 
                     <div class="infoCard">
-                        <h5 class="title">Site institucional</h5>
+                        <h5>Site institucional</h5>
                         <p>monkeybranch.dev</p>
                     </div>
 
@@ -498,7 +475,7 @@
                 <div class="card">
 
                     <div class="infoCard">
-                        <h5 class="title">Quer um orçamento? 😎</h5>
+                        <h5>Quer um orçamento? 😎</h5>
                         <p>Comece por aqui!</p>
                     </div>
 
@@ -524,6 +501,8 @@
     <script src="./3dloader/src/lib/dat.gui.min.js"></script>
 
     <script type="module" src="./3dloader/src/three-main.js"></script>
+
+    <script type="module" src="./pwabuilder-sw-register.js"></script>
 
 </body>
 
