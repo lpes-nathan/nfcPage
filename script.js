@@ -1,20 +1,47 @@
 // Nav bar motion
-var empresaBtn = document.querySelector ("#empresaNav");
-empresaBtn.addEventListener ("click", () => {
-    document.getElementById('contentContainer').style.transform = 'translateX(-200vw)';
+var pessoalBtn = document.querySelector ("#pessoalNav");
+
+pessoalBtn.addEventListener ("click", () => {
+
+    document.querySelector('#contentContainer').style.transform = 'translateX(0vw)';
+
+    pessoalBtn.classList.add("clickedA");
+    agendaBtn.classList.remove("clickedA");
+    empresaBtn.classList.remove("clickedA");
+
     document.body.style.overflowY = 'hidden';
+
 });
+
+
 
 var agendaBtn = document.querySelector ("#agendaNav");
+
 agendaBtn.addEventListener ("click", () => {
-    document.getElementById('contentContainer').style.transform = 'translateX(-100vw)';
-    document.body.style.overflowY = 'auto';
+
+    agendaBtn.classList.add("clickedA");
+    pessoalBtn.classList.remove("clickedA");
+    empresaBtn.classList.remove("clickedA");
+
+    document.querySelector('#contentContainer').style.transform = 'translateX(-100vw)';
+
+    document.body.style.overflowY = 'scroll';
+    
 });
 
-var pessoalBtn = document.querySelector ("#pessoalNav");
-pessoalBtn.addEventListener ("click", () => {
-    document.getElementById('contentContainer').style.transform = 'translateX(0vw)';
+
+
+var empresaBtn = document.querySelector ("#empresaNav");
+empresaBtn.addEventListener ("click", () => {
+    
+    empresaBtn.classList.add("clickedA");
+    pessoalBtn.classList.remove("clickedA");
+    agendaBtn.classList.remove("clickedA");
+    
+    document.querySelector('#contentContainer').style.transform = 'translateX(-200vw)';
+    
     document.body.style.overflowY = 'hidden';
+    
 });
 
 

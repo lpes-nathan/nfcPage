@@ -9,21 +9,25 @@
     <link rel="stylesheet" href="style.css">
 
     <link rel="manifest" href="manifest.json">
-    
+
     <meta name="apple-mobile-web-app-status-bar" content="#e78516">
     <link rel="apple-touch-icon" href="img/logo192.png">
 
 </head>
 
 <body>
+    
+    <div id="topPage">
+        
+    </div>
 
-    <header>
+    <header id="header">
 
         <div id="homeImg"></div>
 
         <div class="profile">
             <div>
-                
+
                 <div class="photoProfile">
                     <img src="./img/photoProfile.png" alt="foto de perfil">
                 </div>
@@ -42,22 +46,18 @@
     <nav>
 
         <div class="containerNav">
-            <label for="pessoal" class="labelNav" id="pessoalNav">
-                <input type="radio" name="mainNav" id="pessoal" checked>
+            <a href="#topPage" id="pessoalNav" class="clickedA">
                 <p>Pessoal</p>
-            </label>
+            </a>
 
-
-            <label for="agenda" class="labelNav" id="agendaNav">
-                <input type="radio" name="mainNav" id="agenda">
+            <a href="#topPage" id="agendaNav">
                 <p>Agenda</p>
-            </label>
+            </a>
 
-
-            <label for="empresa" class="labelNav" id="empresaNav">
-                <input type="radio" name="mainNav" id="empresa">
+            <a href="#topPage" id="empresaNav">
                 <p>Empresa</p>
-            </label>
+            </a>
+
         </div>
 
     </nav>

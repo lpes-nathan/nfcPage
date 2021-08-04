@@ -8,11 +8,12 @@
 
 html {
     font-family: 'Lexend Deca', sans-serif;
-    background:  var(--b-5);
+    scroll-behavior: smooth;
 }
 
 
 body {
+    background:  var(--b-5);
     overflow-x: hidden;
     overflow-y: hidden;
     height: 100vh;
@@ -108,6 +109,16 @@ Header profile
     opacity: 0.6;
 }
 
+header {
+    z-index: -99;
+    top: 0;
+    position: fixed;
+}
+
+#topPage {
+    height: 10px;
+}
+
 .profile {
     padding: 32px;
 }
@@ -137,7 +148,26 @@ Header profile
 /* ----------------
 Nav bar
 ---------------- */
+a {
+    transition: 600ms;
+    padding: 8px;
+    text-decoration: none;
+    width: 32%;
+    display: flex;
+    justify-content: center;
+    border-radius: 4px;
+}
+
+.clickedA {
+    background: var(--b-1);
+}
+
+.clickedA p {
+    color: white;
+}
+
 nav {
+    margin-top: 174px;
     padding: 32px;
     background-color: var(--k6);
     border-radius: 16px 16px 0 0 ;
@@ -152,42 +182,14 @@ nav > .containerNav {
     border-radius: 4px;
 }
 
-.labelNav > input[type=radio]:checked ~ p {
-    transition: 600ms;
-    background: var(--b-3);
-    color: var(--k6);
-}
-
-input[type=radio] {
-    display: none;
-}
-
-.labelNav {
-    width: 32%;
-    text-align: center;
-    font-size: 12px;
-    line-height: 150%;
-    border-radius: 4px;
-    font-weight: 500;
-    color: var(--k2);
-}
-
-.labelNav > p {
-    padding: 8px;
-    border-radius: 4px;
-}
-
 
 
 /* ----------------
 Container content
 ---------------- */
 .contentContainer {
-    width: 100vw;
     overflow-x: hidden;
-    background-color: var(--k6);
-    transform: translateY(-1px);
-    /* opacity: 0; */
+    width: 100vw;
 }
 
 #contentContainer > * {
@@ -196,6 +198,7 @@ Container content
 
 #contentContainer {
     transition: 600ms;
+    background-color: var(--k6);
     display: flex;
     width: max-content;
 }
@@ -245,7 +248,7 @@ Cards pessoal
 }
 
 .red > .infoCard {
-    width: 70%;
+    z-index: 9;
 }
 
 .red > .infoCard > p {
@@ -344,6 +347,10 @@ Agenda container
     height: 32px;
     border-radius: 8px;
     color: var(--k0);
+}
+
+input[type=radio] {
+    display: none;
 }
 
 .days > label > input[type=radio]:checked ~ p {
