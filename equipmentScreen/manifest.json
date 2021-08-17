@@ -1,0 +1,23 @@
+{
+    "name": "Cartão de visita",
+    "short_name": "Cartão de visita",
+    "theme_color": "#929CAE",
+    "background_color": "#11223E",
+    "display": "fullscreen",
+    "orientation": "portrait",
+    "start_url": "../wpnbresqwwg9u/index.html",
+    "scope": "./",
+    "icons": [
+        {
+            "src": "img/logo192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "img/logo512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "prefer_related_applications": false
+  }

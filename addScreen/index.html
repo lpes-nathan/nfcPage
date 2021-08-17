@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de equipamento</title>
+
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../commom.css">
+
+</head>
+
+<body>
+
+    <form action="">
+
+        <div class="formContainer">
+
+            <h3 class="titleContainer">Equipamento</h3>
+
+            <label for="equipType">
+                <h5 class="titleLabel">Tipo de equipamento</h5>
+                <input type="text" name="equipType" id="equipType">
+            </label>
+
+            <label for="brand">
+                <h5 class="titleLabel">Marca</h5>
+                <input type="text" name="brand" id="brand">
+            </label>
+
+            <label for="serialNumber">
+                <h5 class="titleLabel">Número de série</h5>
+                <input type="text" name="serialNumber" id="serialNumber">
+            </label>
+            
+            <label for="details">
+                <h5 class="titleLabel">Detalhes</h5>
+                <textarea name="details" id="details" rows="5"></textarea>
+            </label>
+
+            <label for="typeFile1" class="typeFile">
+                <h5>Foto do equipamento</h5>
+                <img src="img/arrow.svg" alt="flecha para cima">
+                <input type="file" name="typeFile1" id="typeFile1">
+            </label>
+
+        </div>
+        
+        <div class="formContainer">
+
+            <h3 class="titleContainer">Responsável</h3>
+
+            <label for="name">
+                <h5 class="titleLabel">Nome completo</h5>
+                <input type="text" name="name" id="name">
+            </label>
+
+            <label for="email">
+                <h5 class="titleLabel">E-mail</h5>
+                <input type="text" name="email" id="email">
+            </label>
+
+            
+        </div>
+        
+        <label for="typeFile2" class="typeFile">
+            <h5>Arquivo para download</h5>
+            <img src="img/arrow.svg" alt="flecha para cima">
+            <input type="file" name="typeFile2" id="typeFile2">
+        </label>
+
+        <button type="submit">Enviar</button>
+
+    </form>
+
+</body>
+
+</html>

@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+body {
+    background: #fff;
+    overflow-x: hidden;
+    height: 100vh;
+}
+
+
+/* ----------------
+Typography
+---------------- */
+h1 {
+    font-size: 32px;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+h3 {
+    font-size: 22px;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+h5 {
+    font-size: 16px;
+}
+
+h6 {
+    font-size: 14px;
+}
+
+p {
+    font-size: 12px;
+    color: var(--k2);
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-weight: 500;
+    line-height: 150%;
+}
+
+
+
+/* ----------------
+Colors
+---------------- */
+:root {
+
+    --alpha-modal : rgba(0, 0, 0, 0.4);
+
+    /* GREY SCALE */
+    --k-3: #070707;
+    --k-2: #131313;
+    --k-1: #202020;
+    --k0: #2C2C2C;
+    --k1: #4E4E4E;
+    --k2: #707070;
+    --k3: #929292;
+    --k4: #D7D7D7;
+    --k5: #F9F9F9;
+    --k6: #FFF;
+
+    /* BLUE SCALE */
+    --b-5: #04080E;
+    --b-4: #070E1A;
+    --b-3: #0A1526;
+    --b-2: #0E1B32;
+    --b-1: #11223E;
+    --b0: #14284A;
+    --b1: #334563;
+    --b2: #53627C;
+    --b3: #727F95;
+    --b4: #929CAE;
+    --b5: #B2BAC6;
+    --b6: #D3D7DE;
+    --b7: #F3F4F6;
+
+    --width-pad: calc(100vw - 64px)
+}
+
+
+form {
+    padding: 64px 32px;
+}
+
+.formContainer {
+    margin-bottom: 32px;
+}
+
+.titleContainer {
+    font-weight: 700;
+    color: var(--b0);
+}
+
+input[type=text] {
+    padding: 10px 16px;
+    width: 100%;
+    border-radius: 2px;
+    border: 1px solid var(--b4);
+}
+
+textarea {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 150%;
+    resize: none;
+    padding: 16px 16px;
+    width: 100%;
+    border-radius: 2px;
+    border: 1px solid var(--b4);
+}
+
+input:focus-visible {
+    outline: none;
+}
+
+textarea:focus-visible {
+    outline: none;
+}
+
+
+
+.titleLabel {
+    color: var(--b1);
+    transform: translate3d(5px, 11px, 0);
+    padding: 0 4px;
+    background-color: white;
+    width: max-content;
+}
+
+.typeFile {
+    text-align: center;
+    display: flex;
+    border: 1px solid var(--k3);
+    width: 100%;
+    margin-top: 16px;
+    padding: 16px 0;
+    justify-content: center;
+    border-radius: 4px;
+}
+
+.typeFile h5 {
+    color: var(--b2);
+    margin: 0 32px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+input[type=file] {
+    display: none;
+}
+
+
+
+button {
+    font-family: 'Montserrat', sans-serif;
+    padding: 24px 0;
+    width: 100%;
+    text-align: center;
+    font-weight: 600;
+    border-radius: 4px;
+    background-color: var(--b-2);
+    border: none;
+    color: white;
+    margin-top: 48px;
+    font-size: 18px;
+}
