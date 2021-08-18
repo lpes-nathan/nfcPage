@@ -1,21 +1,33 @@
 // This is the "Offline page" service worker
 
-const CACHE = "site-static";
+const staticCacheName = "site-static-v1";
 
-const offlineFallbackPage = [
-  '/',
-  '/script.js',
-  '/style.css',
-  '/3dloader/',
-  '/img/'
+const assets = [
+  './',
+  './index.js',
+  './manifest.json',
+  './style.css',
+  './img/'
 ];
 
 self.addEventListener('install', evt => {
   evt.waitUntil(
-    caches.open(CACHE).then(cache => {
-      cache.addAll(offlineFallbackPage);
+    caches.open(staticCacheName).then(cache => {
+      cache.addAll(assets);
     })
   )
+});
+
+self.addEventListener('activate', evt => {
+  // Cache versioning
+  evt.waitUntil(
+    caches.keys().then(keys => {
+      return Promise.all(keys
+        .filter(key => key !== staticCacheName)
+        .map(key => caches.delete(key))
+      )
+    })
+  );
 });
 
 self.addEventListener('fetch', evt => {
@@ -23,5 +35,5 @@ self.addEventListener('fetch', evt => {
     caches.match(evt.request).then(cacheRes => {
       return cacheRes || fetch(evt.request);
     })
-  )
+  );
 });

@@ -1,3 +1,8 @@
+body {
+    background-color: var(--b-3);
+    overflow-y: hidden;
+}
+
 /* ----------------
 Header profile
 ---------------- */
@@ -34,13 +39,22 @@ header {
 }
 
 .nameandRole p {
-    color: var(--k3);
+    color: var(--k4);
 }
 
 .photoProfile img {
     width: 106px;
     border-radius: 4px;
     border: 2px solid var(--b1);
+}
+
+.locationProfile {
+    margin-top: 8px;
+    display: flex;
+}
+
+.locationProfile> img {
+    margin-right: 8px;
 }
 
 
@@ -128,6 +142,7 @@ Cards pessoal
 
 .card h5 {
     color: var(--b-2);
+    font-weight: 600;
 }
 
 .card p {
@@ -136,223 +151,25 @@ Cards pessoal
 }
 
 .btnCard {
-    height: min-content;
-    border-radius: 8px;
-    border: none;
     padding: 16px;
+}
+
+.downloadInfo {
+    width: calc(100% - 80px);
 }
 
 .downloadBtn {
+    margin-top: 0;
     transform: rotate(90deg);
-}
-
-/* ----------------
-Cards empresa
----------------- */
-.empresaCards {
-    width: calc(100vw - 64px);
-}
-
-
-
-/* ----------------
-Agenda container
----------------- */
-.agendaContainer {
-    /* display: none; */
-    width: calc(100vw - 64px);
-}
-
-.introText > p {
-    margin-top: 4px;
-}
-
-
-
-
-.calendar {
-    margin-top: 32px;
-}
-
-.headerCalendar {
-    display: flex;
-    justify-content: space-between;
-}
-
-.headerCalendar > * {
-    margin-top: 8px;
-    display: flex;
-}
-
-.headerCalendar > * > h5 {
-    margin-right: 8px;
-}
-
-
-
-.week {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    margin-top: 16px;
-}
-
-.week > * {
-    color: var(--b3);
-
-    display: flex;
-    justify-content: center;
+    height: 54px;
+    width: 54px;
     align-items: center;
-    width: calc(var(--width-pad) / 7);
-    height: 32px;
-}
-
-
-
-.days {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    margin-top: 8px;
-}
-
-.days > label {
-    display: flex;
     justify-content: center;
-    width: calc(var(--width-pad) / 7);
 }
 
-.days > label > p {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 32px;
-    height: 32px;
-    border-radius: 8px;
-    color: var(--k0);
-}
-
-input[type=radio] {
-    display: none;
-}
-
-.days > label > input[type=radio]:checked ~ p {
-    transition: 600ms;
-    background: var(--b0);
-    color: var(--k6);
-}
-
-
-
-.notCurrentMonth > p {
-    font-weight: 500!important;
-    color: var(--k4)!important;
-}
-
-
-
-.hour {
-    margin: 64px 0;
-}
-
-.descriptCard:nth-of-type(1) > p {
-    margin-top: 8px;
-}
-
-.avaliableHour > label {
-    display: flex;
-    align-items: center;
-    margin: 16px 0;
-}
-
-.hourCard {
-    width: 100%;
-    border-radius: 8px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 32px;
-    padding: 32px 0;
-}
-
-.notAvaliableCard {
-    background: var(--b6);
-}
-
-.notAvaliableCard > p {
-    color: var(--b2);
-}
-
-.avaliableCard {
-    background-color: var(--b-1);
-}
-
-.avaliableCard > p {
-    color: var(--k6);
-}
-
-
-
-.rangeHour {
-    display: flex;
-    justify-content: space-between;
-}
-
-.rangeHour > div {
-    width: 45%;
-}
-
-.rangeCard {
-    background: var(--k5);
-    padding: 16px 32px;
-    margin-top: 16px;
-    border-radius: 8px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.rangeCard > div > h4 {
-    margin: 8px 22px;
-    color: var(--b2);
-}
-
-.rangeCard > div > h4:nth-of-type(2) {
-    font-weight: 700;
-    color: var(--b-1);
-}
-
-
-
-.agendaForm {
-    display: flex;
-    flex-direction: column;
-    margin: 64px 0;
-}
-
-.agendaForm > input[type=text] {
-    background: var(--k5);
-    width: 100%;
-    margin-bottom:  16px;
-    padding: 16px;
-    font-size: 13px;
-    font-family: 'Montserrat', sans-serif;
-    border: 1px solid var(--b5);
-    border-radius: 4px;
-}
 
 input[type=text]:focus-visible {
     outline: none;
     border: 1px solid var(--k3);
 }
 
-.agendaForm > input[type=button] {
-    margin-top: 32px;
-    padding: 20px 0;
-    font-weight: 600;
-    font-size: 16px;
-    font-family: 'Lexend Deca', sans-serif;
-    color: var(--k6);
-    background: var(--b-2);
-    border-radius: 4px;
-    border: none;
-}
