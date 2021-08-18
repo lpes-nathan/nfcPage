@@ -10,9 +10,26 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="../commom.css">
 
+    <link rel="manifest" href="manifest.json">
+
 </head>
 
 <body>
+
+    <div class="modalPWA">
+
+        <h4>Recomendamos que instale no teu celular.</h4></br>
+        <p>Funciona em qualquer lugar sem a necessidade de conexão com internet.</p>
+
+        <div class="buttonsModalPWA">
+
+            <button class="secondaryBtn" onclick="hideInstallPromo()">Agora não</button>
+
+            <button class="primaryBtn">Sim, aceito.</button>
+
+        </div>
+
+    </div>
 
     <form action="">
 
@@ -36,7 +53,7 @@
             </label>
             
             <label for="details">
-                <h5 class="titleLabel">Detalhes</h5>
+                <h5 class="titleLabel">Descrição</h5>
                 <textarea name="details" id="details" rows="5" required></textarea>
             </label>
 
@@ -81,6 +98,9 @@
         <button type="submit" class="sendBtn">Enviar</button>
 
     </form>
+
+
+    <script src="./script.js"></script>
 
 </body>
 

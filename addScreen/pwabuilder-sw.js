@@ -1,10 +1,10 @@
 // This is the "Offline page" service worker
 
-const staticCacheName = "site-static-v1.2";
+const staticCacheName = "site-static-v2.2";
 
 const assets = [
   './',
-  './index.js',
+  './script.js',
   './manifest.json',
   './style.css',
   './img/'

@@ -7,6 +7,7 @@ if ("serviceWorker" in navigator) {
 
 
 
+const html = document.querySelector('html');
 const modalPWA = document.querySelector('.modalPWA');
 
 function showInstallPromo() {
@@ -16,11 +17,6 @@ function showInstallPromo() {
 function hideInstallPromo() {
     modalPWA.style.transform = 'translateY(50vh)';
     html.style.overflowY = 'scroll';
-    
-    
-    setTimeout(() => {
-        bgModalPWA.style.display = 'none';
-    }, 1000);
 }
 
 

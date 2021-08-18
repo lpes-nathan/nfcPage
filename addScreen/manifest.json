@@ -1,11 +1,11 @@
 {
-    "name": "WPX Equipamento",
-    "short_name": "WPX Equipamento",
+    "name": "WPX Cadastro",
+    "short_name": "WPX Cadastro",
     "theme_color": "#25295B",
     "background_color": "#F4F4F7",
     "display": "fullscreen",
     "orientation": "portrait",
-    "scope": "https://wpxlocacao.com.br/_patrimonio/equipmentScreen/",
+    "scope": "https://wpxlocacao.com.br/_patrimonio/addScreen/",
     "start_url": "./index.html",
     "icons": [
         {
